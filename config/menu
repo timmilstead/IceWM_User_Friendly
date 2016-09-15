@@ -1,0 +1,30 @@
+# This is an example for IceWM's menu definition file.
+#
+# Place your variants in /etc/X11/icewm or in $HOME/.icewm
+# since modifications to this file will be discarded when you
+# (re)install icewm.
+#
+menu Programs folder {
+	menu Games folder {
+		prog "Steam" steam steam
+	}
+    menu Graphics folder {
+	prog "Font Viewer" gnome-font-viewer gnome-font-viewer
+        prog "Image Editor" gimp gimp
+    }
+    menu "Internet" folder {
+        prog "Web Browser" firefox firefox
+        prog Email thunderbird thunderbird
+    }
+    menu "Office" folder {
+	prog "Spreadsheet" /usr/share/icons/gnome/16x16/apps/libreoffice-calc.png libreoffice --calc
+        prog "Word Processor" /usr/share/icons/gnome/16x16/apps/libreoffice-writer.png libreoffice --writer
+    }    
+}
+menu Settings folder {
+	menu "Control Panel" folder {
+	}
+}
+#menufile Toolbar folder toolbar
+#separator
+#menuprog "Desktop Apps" folder /usr/bin/icewm-menu-fdo
